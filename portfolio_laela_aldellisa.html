@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laela Aldellisa - HR Specialist & Psychology Graduate Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            850: '#151F32',
+                            900: '#0F172A',
+                            950: '#080D1A',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Header / Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full glass-nav z-50 border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-navy-900 group flex items-center gap-1">
+                <span>Laela</span><span class="text-gold-600 group-hover:translate-x-0.5 transition-transform">Aldellisa.</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-gold-600 transition-colors">Tentang Saya</a>
+                <a href="#experience" class="hover:text-gold-600 transition-colors">Pengalaman</a>
+                <a href="#skills" class="hover:text-gold-600 transition-colors">Keahlian & Sertifikasi</a>
+                <a href="#achievements" class="hover:text-gold-600 transition-colors">Pencapaian</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-navy-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gold-600 transition-all duration-300 shadow-sm hover:shadow">
+                <span>Hubungi Saya</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center justify-center relative overflow-hidden px-6 bg-gradient-to-b from-white via-slate-50 to-slate-100">
+            <!-- Subtle Decorative Circles -->
+            <div class="absolute top-1/4 -left-20 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-navy-900/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-4xl mx-auto text-center z-10 py-16">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-wider text-gold-700 bg-amber-50 rounded-full border border-amber-200/80 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                    Human Resources & Talent Acquisition Specialist
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-navy-900 tracking-tight leading-tight mb-6">
+                    Menghubungkan <span class="font-serif italic text-gold-600 font-normal">Potensi Manusia</span> dengan Pertumbuhan Organisasi.
+                </h1>
+                <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                    Lulusan S1 Psikologi yang berdedikasi tinggi dalam menciptakan proses rekrutmen yang objektif, analisis asesmen psikologis yang akurat, serta efisiensi manajemen sumber daya manusia.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-navy-900 text-white px-8 py-3.5 rounded-full font-medium hover:bg-gold-600 transition-all duration-300 shadow-md hover:shadow-lg">
+                        <span>Hubungi Saya</span>
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </a>
+                    <a href="#experience" class="inline-flex items-center justify-center gap-2 bg-white text-navy-900 border border-slate-300 px-8 py-3.5 rounded-full font-medium hover:bg-slate-100 transition-all duration-300">
+                        <span>Eksplor Pengalaman</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 bg-white border-y border-slate-200/70">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                    <!-- Profile Accent Card -->
+                    <div class="md:col-span-5 flex justify-center">
+                        <div class="relative">
+                            <div class="w-64 h-72 sm:w-72 sm:h-80 rounded-2xl bg-gradient-to-br from-navy-900 to-navy-850 text-white p-6 flex flex-col justify-between shadow-xl relative overflow-hidden">
+                                <div class="absolute -right-8 -top-8 w-32 h-32 bg-gold-500/20 rounded-full blur-xl"></div>
+                                <div>
+                                    <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Pendidikan</span>
+                                    <h3 class="font-bold text-xl mt-1 leading-snug">S1 Psikologi</h3>
+                                    <p class="text-xs text-slate-300 mt-1">UIN Walisongo Semarang</p>
+                                </div>
+                                <div class="my-auto py-4">
+                                    <div class="text-3xl font-extrabold text-gold-400">3.73 <span class="text-sm font-normal text-slate-300">/ 4.00</span></div>
+                                    <p class="text-xs text-slate-300 mt-0.5">Indeks Prestasi Kumulatif (IPK)</p>
+                                </div>
+                                <div class="border-t border-slate-700/80 pt-3 flex justify-between items-center text-xs text-slate-300">
+                                    <span>Tahun Kelulusan</span>
+                                    <span class="font-semibold text-white">2021 - 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="md:col-span-7">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-2">Tentang Saya</h2>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-navy-900 mb-5 leading-snug">
+                            Fresh Graduate Psikologi dengan Fokus Karir Human Resources
+                        </h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                            Saya merupakan lulusan Psikologi dengan minat kuat pada area <strong class="text-navy-900">Talent Acquisition, Recruitment, dan People Development</strong>. Memiliki pengalaman nyata dalam mendukung proses rekrutmen di Balai Latihan Kerja Semarang, mulai dari pembuatan instrumen tes hingga pendampingan wawancara seleksi.
+                        </p>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+                            Terbiasa mengadministrasikan serta menskoring berbagai jenis alat tes psikologi standar (Kraeplin, Pauli, BAUM, DAP, HTP, WARTEGG) untuk menghasilkan data asesmen kandidat yang kredibel dan objektif.
+                        </p>
+                        
+                        <!-- Thesis Box -->
+                        <div class="bg-amber-50/60 border-l-4 border-gold-500 p-4 rounded-r-xl">
+                            <h4 class="text-xs font-bold text-navy-900 uppercase tracking-wider mb-1">Judul Skripsi / Riset Akademik</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 italic">
+                                "Pengaruh Job Insecurity dan Organizational Citizenship Behavior terhadap Turnover Intention pada Gen Z di Kota Semarang"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section id="experience" class="py-24 bg-slate-50">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-2">Pengalaman Kerja & Organisasi</h2>
+                    <h3 class="text-3xl font-bold text-navy-900">Rekam Jejak Profesional</h3>
+                    <p class="text-sm text-slate-500 mt-2">Pengalaman kerja magang dan kepemimpinan organisasi dalam mengelola SDM & Administrasi.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Card 1: BLK -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 bg-amber-50 text-gold-700 rounded-full border border-amber-200/60">Magang Kerja</span>
+                                <span class="text-xs text-slate-400 font-medium">Feb 2024 - Apr 2024</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy-900">Human Resources Intern</h4>
+                            <p class="text-sm font-medium text-slate-500 mb-4">Balai Latihan Kerja - Semarang</p>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Menyusun pertanyaan tes tertulis untuk proses seleksi calon peserta pelatihan kerja.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Membersamai instruktur dalam proses wawancara seleksi peserta pelatihan.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Merekap data absensi harian dan mendampingi peserta berkebutuhan khusus selama praktik.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Memberikan layanan informasi program pelatihan baik secara langsung maupun media sosial.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: PKBI -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 bg-amber-50 text-gold-700 rounded-full border border-amber-200/60">Magang Kerja</span>
+                                <span class="text-xs text-slate-400 font-medium">Apr 2024 - Jun 2024</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy-900">People Development & Education Intern</h4>
+                            <p class="text-sm font-medium text-slate-500 mb-4">PKBI Jawa Tengah - Semarang</p>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Mengembangkan program pembelajaran bagi anak jalanan di Rumah Pintar Bangjo & Pondok Boro.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Mendampingi pelaksanaan edukasi pendidikan kesehatan reproduksi remaja di tingkat SMP & SMA/SMK.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Mengelola pembuatan konten edukasi media sosial serta pencatatan dokumentasi sesi konseling.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: UKM Taekwondo Sekretaris -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-navy-900 rounded-full border border-slate-200">Organisasi</span>
+                                <span class="text-xs text-slate-400 font-medium">2023 - 2024</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy-900">Sekretaris Umum</h4>
+                            <p class="text-sm font-medium text-slate-500 mb-4">UKM Taekwondo UIN Walisongo</p>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Menyusun notulensi rapat akurat dan mengelola kearsipan surat masuk/keluar.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Mengkoordinasikan administrasi organisasi serta alur komunikasi lintas UKM.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Memastikan ketercapaian program kerja kesektariatan sebesar 100%.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: UKM Taekwondo Pubdekdok -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-navy-900 rounded-full border border-slate-200">Organisasi</span>
+                                <span class="text-xs text-slate-400 font-medium">2022 - 2023</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy-900">Divisi Publikasi, Dekorasi, & Dokumentasi</h4>
+                            <p class="text-sm font-medium text-slate-500 mb-4">UKM Taekwondo UIN Walisongo</p>
+                            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Membuat media visual informasi berupa poster, pamflet, dan banner kegiatan.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-gold-500 mt-1 text-xs"></i>
+                                    <span>Mengelola konten publikasi sosial media dan dokumentasi event seminar/kejuaraan.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="py-24 bg-white border-y border-slate-200/70">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                    
+                    <!-- Skills Section -->
+                    <div class="md:col-span-6">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-2">Kompetensi Utama</h2>
+                        <h3 class="text-2xl font-bold text-navy-900 mb-6">Keahlian & Alat Tes</h3>
+                        
+                        <!-- Psychotest Tools Badges -->
+                        <div class="mb-8">
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-3">Administrasi Alat Tes Psikologi</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">Kraeplin</span>
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">Pauli</span>
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">BAUM</span>
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">DAP</span>
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">HTP</span>
+                                <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-xs font-medium tracking-wide">WARTEGG</span>
+                            </div>
+                        </div>
+
+                        <!-- Technical & Software -->
+                        <div class="mb-8">
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-3">Software & Tools</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200">Microsoft Excel</span>
+                                <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200">Microsoft Word</span>
+                                <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200">Microsoft PowerPoint</span>
+                                <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200">Canva</span>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-3">Soft Skills & Bahasa</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-amber-50 text-gold-700 border border-amber-200 rounded-lg text-xs font-medium">Komunikasi Efektif</span>
+                                <span class="px-3 py-1.5 bg-amber-50 text-gold-700 border border-amber-200 rounded-lg text-xs font-medium">Berpikir Kritis</span>
+                                <span class="px-3 py-1.5 bg-amber-50 text-gold-700 border border-amber-200 rounded-lg text-xs font-medium">Pendengar Aktif</span>
+                                <span class="px-3 py-1.5 bg-amber-50 text-gold-700 border border-amber-200 rounded-lg text-xs font-medium">Kerjasama Tim</span>
+                                <span class="px-3 py-1.5 bg-amber-50 text-gold-700 border border-amber-200 rounded-lg text-xs font-medium">Public Speaking</span>
+                                <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-xs font-medium border border-slate-200">Bahasa Indonesia & Inggris</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Timeline -->
+                    <div class="md:col-span-6">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-2">Pengembangan Diri</h2>
+                        <h3 class="text-2xl font-bold text-navy-900 mb-6">Sertifikasi & Pelatihan</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 hover:border-gold-500/40 transition-colors">
+                                <div class="font-bold text-navy-900 text-sm">HR Specialist: Rekrutmen Karyawan dan Payroll</div>
+                                <div class="text-xs text-slate-500 mt-0.5">IODA Academy • September 2026</div>
+                            </div>
+
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 hover:border-gold-500/40 transition-colors">
+                                <div class="font-bold text-navy-900 text-sm">E-learning Course Talent Acquisition</div>
+                                <div class="text-xs text-slate-500 mt-0.5">MySkill • September 2026</div>
+                            </div>
+
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 hover:border-gold-500/40 transition-colors">
+                                <div class="font-bold text-navy-900 text-sm">Excel Pemula Batch 6 (Short Course)</div>
+                                <div class="text-xs text-slate-500 mt-0.5">BPVP Sidoarjo • Mei 2026</div>
+                            </div>
+
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 hover:border-gold-500/40 transition-colors">
+                                <div class="font-bold text-navy-900 text-sm">TOEFL ITP Certification</div>
+                                <div class="text-xs text-slate-500 mt-0.5">Language Development Center UIN Walisongo • 2025 - 2027</div>
+                            </div>
+
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 hover:border-gold-500/40 transition-colors">
+                                <div class="font-bold text-navy-900 text-sm">Human Resource Class</div>
+                                <div class="text-xs text-slate-500 mt-0.5">Tempat Belajar • Agustus 2024</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-20 bg-slate-50">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-2">Prestasi</h2>
+                    <h3 class="text-3xl font-bold text-navy-900">Pencapaian Penting</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-amber-50 text-gold-600 rounded-xl flex items-center justify-center shrink-0 border border-amber-200/60">
+                            <i class="fa-solid fa-file-contract text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900 text-sm sm:text-base">Publikasi Jurnal Ilmiah Sinta 5</h4>
+                            <p class="text-xs text-slate-500 mt-1">Jurnal Dinamika dan Sosial Budaya (2023)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-amber-50 text-gold-600 rounded-xl flex items-center justify-center shrink-0 border border-amber-200/60">
+                            <i class="fa-solid fa-medal text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900 text-sm sm:text-base">Juara 2 E-Poomsae Kelas Senior</h4>
+                            <p class="text-xs text-slate-500 mt-1">Skybattle Piala Ketua MPR-RI (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-navy-900 text-white relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Kontak</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold mb-6">Mari Berkolaborasi</h3>
+                <p class="text-slate-300 max-w-lg mx-auto mb-10 text-sm sm:text-base font-light leading-relaxed">
+                    Saya terbuka untuk peluang karir di bidang Human Resources, Talent Acquisition, maupun Administrasi Asesmen Psikologi.
+                </p>
+
+                <!-- Contact Badges -->
+                <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
+                    <a href="mailto:laelaaldellisa07@gmail.com" class="flex items-center space-x-3 bg-navy-850 px-6 py-3 rounded-full text-slate-200 hover:text-gold-400 border border-slate-700/60 hover:border-gold-500/50 transition-all">
+                        <i class="fa-regular fa-envelope text-gold-400"></i>
+                        <span class="text-xs sm:text-sm font-medium">laelaaldellisa07@gmail.com</span>
+                    </a>
+                    <a href="tel:0859159754308" class="flex items-center space-x-3 bg-navy-850 px-6 py-3 rounded-full text-slate-200 hover:text-gold-400 border border-slate-700/60 hover:border-gold-500/50 transition-all">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span class="text-xs sm:text-sm font-medium">0859159754308</span>
+                    </a>
+                    <div class="flex items-center space-x-3 bg-navy-850 px-6 py-3 rounded-full text-slate-300 border border-slate-700/60">
+                        <i class="fa-solid fa-location-dot text-gold-400"></i>
+                        <span class="text-xs sm:text-sm font-medium">Kendal, Indonesia</span>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-800 pt-8 text-xs text-slate-500">
+                    &copy; 2026 Laela Aldellisa. All rights reserved.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
